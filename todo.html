@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha To-Do List</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <main class="todo-container">
+    <h1>Olá, <span id="userName"></span>!</h1>
+    <p id="welcomeMessage" style="text-align:center; font-size: 1rem; color: #e0e0e0;"></p>
+    <button id="logoutButton" style="display: none;">Sair</button>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Nova tarefa" aria-label="Digite uma nova tarefa" required />
+      <button type="submit">Adicionar</button>
+    </form>
+    
+    <h2 id="taskSubtitle" style="text-align: center; margin-top: 1rem; color: #4f46e5;">Minhas Tarefas</h2>
+    
+    <ul id="taskList" aria-label="Lista de tarefas"></ul>    
+  </main>
+  <script src="js/todo.js"></script>
+</body>
+</html>
